@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pkg/errors"
-	"github.com/techxmind/config"
-	logger2 "github.com/techxmind/logger"
-	"golang.org/x/sync/singleflight"
+	"github.com/duxiu-robot/config"
+	logger2 "github.com/duxiu-robot/logger"
 	stdredis "github.com/go-redis/redis/v8"
+	"github.com/pkg/errors"
+	"golang.org/x/sync/singleflight"
 )
 
 var (
@@ -18,7 +18,7 @@ var (
 )
 
 var (
-	logger         = logger2.Named("redis")
+	logger = logger2.Named("redis")
 )
 
 type Client struct {

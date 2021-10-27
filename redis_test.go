@@ -7,14 +7,14 @@ import (
 	"time"
 
 	"github.com/alicebob/miniredis/v2"
+	"github.com/duxiu-robot/config"
 	"github.com/stretchr/testify/suite"
-	"github.com/techxmind/config"
 )
 
 type redisTestSuite struct {
 	suite.Suite
-	rds *miniredis.Miniredis
-	bizID string
+	rds          *miniredis.Miniredis
+	bizID        string
 	invalidBizID string
 }
 
